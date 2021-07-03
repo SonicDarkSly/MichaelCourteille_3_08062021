@@ -1,0 +1,14 @@
+{
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./styles/css/",
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
+        }
+    ]
+}
