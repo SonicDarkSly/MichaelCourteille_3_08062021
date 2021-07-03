@@ -61,7 +61,8 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -84,12 +85,10 @@ body {
     background: linear-gradient(to top left, $color1, $color2);
     padding: 20px;
     text-decoration: none;
-    transition: all 2s ease-out;
 }
 
 .exploreRestaurant a:hover {
     background: linear-gradient(to top left, $color2, $color1);
-    transition: all 2s ease-out;
 }
 
 /* fonctionnement site */ 
@@ -110,18 +109,19 @@ body {
     justify-content: center; 
     text-align: center;
     color: #000000;
-    height: 40px;
+    height: 50px;
     font-family: $police2;
     font-size: 18px;
     font-weight: 700;
     background-color: #f0f0f0;
     padding: 10px;
-    border-radius: 30px;
+    margin: 20px;
+    border-radius: 20px;
     text-decoration: none;
+    box-shadow: 0px 5px 10px #d8d5d5;
 }
 
 .fa-mobile-alt {
     margin-right: 30px;
     color: #747272;
-
 }
