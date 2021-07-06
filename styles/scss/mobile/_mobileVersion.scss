@@ -1,5 +1,13 @@
 @media screen and (max-width: 400px) {
 
+    .fonctionnement_Titre {
+        text-align: left;
+        font-family: $police2;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 20px;
+    }
+
     #nav_fonctionnement li {
         height: 50px;
         list-style: none;
@@ -20,16 +28,22 @@
         top: 10px;
         left: -25px;
         width: 10px;
-        height: 5px;
+        height: 10px;
         text-align: center;
         color: #ffffff;
         font-family: $police2;
         font-size: 14px;
         font-weight: 700;
         background-color: $color1;
-        padding: 10px;
+        padding-bottom: 12px;
         margin: 0px;
         border-radius: 50px;
+        text-indent: 1px;
     }
 
+    .nav_text {
+        text-align: center;
+        position:relative;
+        top: -30px;
+    }
 }

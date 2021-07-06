@@ -4,8 +4,6 @@
 
 /* variables */
 
-$backgroundColorWhite : #ffffff;
-
 $color1 : #9356DC;
 $color2 : #FF79DA;
 $color3 : #99E2D0;
@@ -15,7 +13,7 @@ $police2 : Roboto;
 
 body {
     margin: 0;
-    background-color: $backgroundColorWhite;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -30,7 +28,7 @@ body {
     color: black;
     font-family: $police1;
     font-size: 38px;
-    background-color: $backgroundColorWhite;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -100,8 +98,11 @@ body {
     font-family: $police2;
 }
 
-.containerFonctionnement p {
-    text-align: left;
+.fonctionnement_Titre {
+    font-family: $police2;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
 }
 
 #nav_fonctionnement {
@@ -109,8 +110,10 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0px;
+    margin: 0px;
     justify-content: center; 
 }
+
 
 #nav_fonctionnement li {
     width: 300px;
@@ -128,13 +131,18 @@ body {
     box-shadow: 0px 5px 10px #d8d5d5;
 }
 
+.nav_text {
+    text-align: center;
+    position:relative;
+    top: 30px;
+}
+
 .nav_number {
     position:relative;
-    top: 100px;
+    top: 0px;
     left: 135px;
     width: 20px;
-    height: 10px;
-    text-align: center;
+    height: 20px;
     color: #ffffff;
     font-family: $police2;
     font-size: 18px;
@@ -143,8 +151,8 @@ body {
     padding: 10px;
     margin: 0px;
     border-radius: 30px;
-    display: table-cell;
-    vertical-align: middle;
+    text-align: center;
+    text-indent: 0px;
 }
 
 .fa-mobile-alt {
@@ -163,6 +171,37 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     color: #747272;
+}
+
+/* footer */ 
+
+.footer {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_logo {
+    font-family: $police1;
+    font-size: 22px;
+}
+
+.footer_liens {
+    font-family: $police2;
+}
+
+.fa-utensils {
+    margin-right: 15px;
+}
+
+.fa-hands-helping {
+    margin-right: 8px;
 }
 
 @import 'mobile/mobileVersion';
