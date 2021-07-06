@@ -114,19 +114,21 @@ body {
 
 .nav_number {
   position: relative;
-  top: -25px;
+  top: 100px;
   left: 135px;
-  width: 10px;
+  width: 20px;
   height: 10px;
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   background-color: #9356DC;
   padding: 10px;
   margin: 0px;
-  border-radius: 20px;
+  border-radius: 30px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .fa-mobile-alt {
@@ -168,7 +170,7 @@ body {
     top: 10px;
     left: -25px;
     width: 10px;
-    height: 10px;
+    height: 5px;
     text-align: center;
     color: #ffffff;
     font-family: Roboto;
@@ -177,6 +179,6 @@ body {
     background-color: #9356DC;
     padding: 10px;
     margin: 0px;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
