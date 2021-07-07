@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap");
 .loader {
+  width: 100%;
   position: absolute;
   top: 25%;
-  left: 30%;
   color: #9356DC;
   font-family: Shrikhand;
   font-size: 96px;
@@ -63,6 +63,25 @@
   }
   100% {
     transform: scale(0.1);
+    opacity: 0;
+  }
+}
+/* mobile version */
+@media screen and (max-width: 400px) {
+  .loader {
+    width: 100%;
+    position: absolute;
+    top: 23%;
+    color: #9356DC;
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: bounceIn;
+            animation-name: bounceIn;
     opacity: 0;
   }
 }

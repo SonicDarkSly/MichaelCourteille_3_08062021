@@ -1,7 +1,7 @@
 .loader {
+    width: 100%;
     position: absolute;
     top: 25%;
-    left: 30%;
     color: $color1;
     font-family: $police1;
     font-size: 96px;
@@ -36,4 +36,25 @@
       transform: scale(0.1);
       opacity: 0;
     }
+  }
+
+
+  /* mobile version */
+
+
+  @media screen and (max-width: 400px) { 
+    .loader {
+      width: 100%;
+      position: absolute;
+      top: 23%;
+       color: $color1;
+       font-family: $police1;
+       font-size: 30px;
+       font-weight: 300;
+       justify-content: center; 
+       text-align: center;
+       animation-duration: 3s;
+       animation-name: bounceIn;
+       opacity: 0;
+   }
   }
