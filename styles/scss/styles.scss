@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap');
-
-
 /* variables */
 
-$color1 : #9356DC;
+$color1 : #9356DC; 
 $color2 : #FF79DA;
 $color3 : #99E2D0;
 
 $police1 : Shrikhand;
 $police2 : Roboto;
 
+/* import */
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap');
+@import 'elements/loader';
+
 body {
-    margin: 0;
+    margin: 0px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -213,7 +215,6 @@ body {
     overflow:hidden;
     margin: 0px;
     padding: 0px;
-
 }
 
 .restaurant_blockimg img {
@@ -236,9 +237,27 @@ body {
     text-align: left;
 }
 
+.restaurant_blocktext_titre {
+    width: 50%;
+    font-family: $police2;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.restaurant_blocktext_icone {
+    position: relative;
+    right: -15%;
+}
+
 .fa-heart {
     position: relative;
     right: -32%;
+    color: #979797;
+}
+
+.fa-heart:hover {
+    background:transparent;
+    color:$color2;
 }
 
 
@@ -279,3 +298,5 @@ body {
 @import 'mobile/mobileVersion';
 
 /* tablette */ 
+
+

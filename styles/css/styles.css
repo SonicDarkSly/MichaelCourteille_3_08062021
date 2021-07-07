@@ -1,8 +1,73 @@
+/* variables */
+/* import */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap");
-/* variables */
+.loader {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  color: #9356DC;
+  font-family: Shrikhand;
+  font-size: 96px;
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  opacity: 0;
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+    color: #FF79DA;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+    color: #FF79DA;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
 body {
-  margin: 0;
+  margin: 0px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -218,9 +283,27 @@ body {
   text-align: left;
 }
 
+.restaurant_blocktext_titre {
+  width: 50%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.restaurant_blocktext_icone {
+  position: relative;
+  right: -15%;
+}
+
 .fa-heart {
   position: relative;
   right: -32%;
+  color: #979797;
+}
+
+.fa-heart:hover {
+  background: transparent;
+  color: #FF79DA;
 }
 
 /* footer */
@@ -300,6 +383,11 @@ body {
     text-align: center;
     position: relative;
     top: -30px;
+  }
+
+  .restaurant_blockimg {
+    height: 180px;
+    width: 280px;
   }
 }
 /* tablette *//*# sourceMappingURL=styles.css.map */
