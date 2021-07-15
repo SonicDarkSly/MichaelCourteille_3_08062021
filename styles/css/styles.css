@@ -242,6 +242,42 @@
   padding-top: 30px;
 }
 
+.starter {
+  -webkit-animation: fadein 3s ease-in-out;
+          animation: fadein 3s ease-in-out;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fill {
+  color: black;
+  cursor: pointer;
+}
+.fill:hover {
+  -webkit-animation: fill 0.3s ease-in-out;
+          animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  font-weight: bold;
+}
+
 body {
   margin: 0px;
   background: #f0f0f0;
@@ -495,7 +531,7 @@ body {
 
 .fa-heart:hover {
   background: transparent;
-  color: #FF79DA;
+  color: #9356DC;
 }
 
 /* footer */
