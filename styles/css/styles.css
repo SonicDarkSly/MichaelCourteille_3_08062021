@@ -150,9 +150,10 @@
 
 .menu li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
+  padding-top: 0px;
   margin: 20px;
-  height: 40px;
+  height: 70px;
   background-color: #ffffff;
   box-shadow: 0px 5px 10px #d8d5d5;
   border-radius: 20px;
@@ -166,19 +167,41 @@
 }
 .menu li:hover .menu_prix {
   transform: translate(-50px);
+  padding-left: 50px;
+}
+.menu li:hover .menu_titre {
+  transform: translate(-50px);
+  padding-left: 50px;
+}
+.menu li:hover .fa-check-circle {
+  font-size: 24px;
+  transform: rotate(360deg);
+  transition: transform 450ms ease-in-out;
 }
 
 .menu_titre {
   font-weight: 700;
+  display: flex;
+}
+
+.menu_titre > span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu_description {
-  display: inline;
   font-weight: 300;
   float: left;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
 }
 
 .menu_prix {
+  text-align: right;
   display: inline;
   float: right;
   font-weight: 700;
@@ -187,13 +210,13 @@
 
 .cross {
   position: relative;
-  right: -80px;
-  bottom: 30px;
+  right: -55px;
+  bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
-  height: 62px;
+  height: 85px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0;
@@ -207,7 +230,11 @@
   margin: 0px;
   padding: 0px;
   border-top: solid #99E2D0 2px;
-  width: 50px;
+  width: 40px;
+}
+
+.last__line {
+  display: flex;
 }
 
 body {
@@ -487,7 +514,7 @@ body {
 }
 
 /* mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   .fonctionnement_Titre {
     text-align: left;
     font-family: Roboto;
@@ -506,7 +533,7 @@ body {
     font-weight: 700;
     background-color: #f0f0f0;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #d8d5d5;
   }
