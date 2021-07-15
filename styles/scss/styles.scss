@@ -27,6 +27,16 @@ body {
 
 /* header */
 
+.headerLogo_g {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    line-height: 2.4em;
+}
+
 #headerLogo {
     color: black;
     font-family: $police1;
@@ -78,7 +88,7 @@ body {
     font-weight: 700;
 }
 
-.exploreRestaurant a {
+.btnLink {
     color: #ffffff;
     border-radius: 30px;
     height: 40px;
@@ -90,7 +100,7 @@ body {
     text-decoration: none;
 }
 
-.exploreRestaurant a:hover {
+.btnLink:hover {
     background: linear-gradient(to top left, $color2, $color1);
 }
 
@@ -274,6 +284,7 @@ body {
     background: #1f1f1f;
     color: #ffffff;
     padding: 10px;
+    padding-left: 20px;
     text-align: left;
 }
 

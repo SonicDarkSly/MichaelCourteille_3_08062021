@@ -24,20 +24,20 @@
 .menuNom {
     padding: 10px;
     margin: 10px;
+    padding-bottom: 30px;
 }
 
 .menuNom_g {
     font-family: $police1;
-    text-align: left;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px;
     float: left;
+    line-height: 1em;
 }
 
 .menuNom_d {
     font-family: $police2;
-    text-align: left;
     font-weight: 700;
     font-size: 20px;
     padding: 10px;
@@ -149,4 +149,9 @@
 
   .last__line {
     display: flex;
+  }
+
+  .sectionCommande {
+    margin: 0px;
+    padding-top: 30px;
   }

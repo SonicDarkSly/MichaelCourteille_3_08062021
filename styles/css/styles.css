@@ -111,20 +111,20 @@
 .menuNom {
   padding: 10px;
   margin: 10px;
+  padding-bottom: 30px;
 }
 
 .menuNom_g {
   font-family: Shrikhand;
-  text-align: left;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   float: left;
+  line-height: 1em;
 }
 
 .menuNom_d {
   font-family: Roboto;
-  text-align: left;
   font-weight: 700;
   font-size: 20px;
   padding: 10px;
@@ -237,6 +237,11 @@
   display: flex;
 }
 
+.sectionCommande {
+  margin: 0px;
+  padding-top: 30px;
+}
+
 body {
   margin: 0px;
   background: #f0f0f0;
@@ -249,6 +254,16 @@ body {
 }
 
 /* header */
+.headerLogo_g {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  color: black;
+  font-size: 22px;
+  text-align: left;
+  line-height: 2.4em;
+}
+
 #headerLogo {
   color: black;
   font-family: Shrikhand;
@@ -298,7 +313,7 @@ body {
   font-weight: 700;
 }
 
-.exploreRestaurant a {
+.btnLink {
   color: #ffffff;
   border-radius: 30px;
   height: 40px;
@@ -310,7 +325,7 @@ body {
   text-decoration: none;
 }
 
-.exploreRestaurant a:hover {
+.btnLink:hover {
   background: linear-gradient(to top left, #FF79DA, #9356DC);
 }
 
@@ -488,6 +503,7 @@ body {
   background: #1f1f1f;
   color: #ffffff;
   padding: 10px;
+  padding-left: 20px;
   text-align: left;
 }
 
@@ -514,7 +530,7 @@ body {
 }
 
 /* mobile */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .fonctionnement_Titre {
     text-align: left;
     font-family: Roboto;
@@ -532,7 +548,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #d8d5d5;
