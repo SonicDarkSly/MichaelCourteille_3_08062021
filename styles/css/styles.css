@@ -93,38 +93,54 @@
 }
 
 .imgHeader img {
-  max-width: 100%;
-  max-height: 100%;
-  filter: opacity(50%);
+  width: 100%;
+  max-height: 60em;
+  overflow: hidden;
 }
 
-.containerRestaurant_paletteDuGout {
+.containerRestaurant {
   filter: opacity(100%);
   width: 100%;
   font-family: Roboto;
   background: #f0f0f0;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-top: -50%;
+  transform: translateY(-5em);
 }
 
-.paletteDuGout_Nom {
+.menuNom {
+  padding: 10px;
+  margin: 10px;
+}
+
+.menuNom_g {
   font-family: Shrikhand;
   text-align: left;
   font-weight: 700;
   font-size: 20px;
   padding: 10px;
-  margin-left: 20px;
+  float: left;
 }
 
-.paletteDuGout_sectionMenu {
+.menuNom_d {
   font-family: Roboto;
   text-align: left;
-  font-weight: 300;
-  margin-left: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+  float: right;
 }
 
-#menu {
+.sectionMenu {
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 10px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.menu {
   text-align: left;
   padding: 0px;
   margin: 0px;
@@ -132,13 +148,24 @@
   background-color: #f0f0f0;
 }
 
-#menu li {
+.menu li {
   list-style: none;
   padding: 10px;
   margin: 20px;
+  height: 40px;
   background-color: #ffffff;
   box-shadow: 0px 5px 10px #d8d5d5;
   border-radius: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu li:hover .cross {
+  opacity: 1;
+  transform: translate(-40px);
+}
+.menu li:hover .menu_prix {
+  transform: translate(-50px);
 }
 
 .menu_titre {
@@ -146,18 +173,46 @@
 }
 
 .menu_description {
+  display: inline;
   font-weight: 300;
-  text-align: left;
+  float: left;
 }
 
 .menu_prix {
+  display: inline;
+  float: right;
   font-weight: 700;
-  margin-right: -10px;
+  transition: transform 330ms ease-in-out;
+}
+
+.cross {
+  position: relative;
+  right: -80px;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 62px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+  float: right;
+  background: #99E2D0;
+  color: #ffffff;
+}
+
+.hr_sectionMenu {
+  margin: 0px;
+  padding: 0px;
+  border-top: solid #99E2D0 2px;
+  width: 50px;
 }
 
 body {
   margin: 0px;
-  background-color: #ffffff;
+  background: #f0f0f0;
   text-align: center;
 }
 
@@ -279,6 +334,7 @@ body {
   text-align: center;
   position: relative;
   top: 10px;
+  font-size: 16px;
 }
 
 .nav_number {
@@ -334,7 +390,7 @@ body {
   margin: 20px;
 }
 
-.containerRestaurant {
+.containerRestaurantIndex {
   width: 100%;
   font-family: Roboto;
 }

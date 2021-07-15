@@ -16,7 +16,7 @@ $police2 : Roboto;
 
 body {
     margin: 0px;
-    background-color: #ffffff;
+    background:#f0f0f0;
     text-align: center;
 }
 
@@ -143,6 +143,7 @@ body {
     text-align: center;
     position:relative;
     top: 10px;
+    font-size: 16px;
 }
 
 .nav_number {
@@ -200,7 +201,7 @@ body {
     margin: 20px;
 }
 
-.containerRestaurant {
+.containerRestaurantIndex {
     width: 100%;
     font-family: $police2;
 }
