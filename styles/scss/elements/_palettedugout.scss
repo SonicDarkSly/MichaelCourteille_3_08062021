@@ -74,19 +74,19 @@
     text-overflow: ellipsis;
     overflow: hidden;
     
-    &:hover .cross {
+    &:active .cross {
         opacity: 1;
         transform: translate(-40px);
     }
-    &:hover .menu_prix {
+    &:active .menu_prix {
         transform: translate(-50px);
         padding-left: 50px;
     }
-    &:hover .menu_titre {
+    &:active .menu_titre {
         transform: translate(-50px);
         padding-left: 50px;
     }
-    &:hover .fa-check-circle {
+    &:active .fa-check-circle {
         font-size: 24px;
         transform: rotate(360deg);
         transition: transform 450ms ease-in-out;
@@ -176,11 +176,23 @@
     color: black;
     cursor: pointer;
     &:hover {
-      animation: fill 0.3s ease-in-out;
+      animation: fill 0.7s ease-in-out;
       display: inline-block;
       opacity: 1;
       background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       font-weight: bold;
+    }
+  }
+
+  @keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
     }
   }
