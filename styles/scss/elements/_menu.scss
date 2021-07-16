@@ -74,6 +74,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     
+      /* animations choix menu au clic */ 
+
     &:active .cross {
         opacity: 1;
         transform: translate(-40px);
@@ -153,14 +155,23 @@
 
   .sectionCommande {
     margin: 0px;
-    padding-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
   }
 
 
+  /* animations entree page menu */
 
+  .starter_entree {
+    animation: fadein 2s ease-in-out;
+  }
 
-  .starter {
-    animation: fadein 3s ease-in-out;
+  .starter_plat {
+    animation: fadein 5s ease-in-out;
+  }
+
+  .starter_dessert {
+    animation: fadein 7s ease-in-out;
   }
 
   @keyframes fadein {
@@ -172,10 +183,13 @@
     }
 }
 
+
+  /* animations coeur au clic */
+
 .fill {
     color: black;
     cursor: pointer;
-    &:hover {
+    &:active {
       animation: fill 0.7s ease-in-out;
       display: inline-block;
       opacity: 1;

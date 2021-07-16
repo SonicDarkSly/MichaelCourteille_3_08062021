@@ -159,6 +159,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  /* animations choix menu au clic */
 }
 .menu li:active .cross {
   opacity: 1;
@@ -238,12 +239,24 @@
 
 .sectionCommande {
   margin: 0px;
-  padding-top: 30px;
+  padding-top: 0px;
+  padding-bottom: 40px;
 }
 
-.starter {
-  -webkit-animation: fadein 3s ease-in-out;
-          animation: fadein 3s ease-in-out;
+/* animations entree page menu */
+.starter_entree {
+  -webkit-animation: fadein 2s ease-in-out;
+          animation: fadein 2s ease-in-out;
+}
+
+.starter_plat {
+  -webkit-animation: fadein 5s ease-in-out;
+          animation: fadein 5s ease-in-out;
+}
+
+.starter_dessert {
+  -webkit-animation: fadein 7s ease-in-out;
+          animation: fadein 7s ease-in-out;
 }
 
 @-webkit-keyframes fadein {
@@ -263,11 +276,12 @@
     opacity: 1;
   }
 }
+/* animations coeur au clic */
 .fill {
   color: black;
   cursor: pointer;
 }
-.fill:hover {
+.fill:active {
   -webkit-animation: fill 0.7s ease-in-out;
           animation: fill 0.7s ease-in-out;
   display: inline-block;
