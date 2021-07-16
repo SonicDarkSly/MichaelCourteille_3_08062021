@@ -174,14 +174,6 @@
     animation: fadein 7s ease-in-out;
   }
 
-  @keyframes fadein {
-    from {
-      opacity:0;
-    }
-    to {
-      opacity:1;
-    }
-}
 
 
   /* animations coeur au clic */
@@ -196,17 +188,5 @@
       background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       font-weight: bold;
-    }
-  }
-
-  @keyframes fill {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
     }
   }
