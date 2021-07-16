@@ -403,7 +403,7 @@ body {
 }
 
 .btnLink:hover {
-  box-shadow: 0px 5px 10px #000000;
+  box-shadow: 0px 5px 10px #707070;
   background: linear-gradient(to top left, #FF79DA, #9356DC);
   opacity: 0.8;
 }
