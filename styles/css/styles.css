@@ -246,16 +246,15 @@
 
 /* animations coeur au clic */
 .fill {
-  color: black;
   cursor: pointer;
 }
-.fill:active {
+.fill:hover {
   -webkit-animation: fill 1s ease-in-out;
           animation: fill 1s ease-in-out;
   display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
@@ -591,11 +590,7 @@ body {
   position: relative;
   right: -32%;
   color: #979797;
-}
-
-.fa-heart:hover {
-  background: transparent;
-  color: #9356DC;
+  font-weight: bold;
 }
 
 /* footer */
