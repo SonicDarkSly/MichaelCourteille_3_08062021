@@ -8,7 +8,7 @@
         padding-left: 20px;
     }
 
-    #nav_fonctionnement li {
+    .nav_fonctionnementLi {
         height: 50px;
         list-style: none;
         text-align: left;
@@ -23,6 +23,19 @@
         box-shadow: 0px 5px 10px #d8d5d5;
     }
 
+    .nav_fonctionnementLi:active{ 
+        background: #f2eafb ;
+        &:active .fa-mobile-alt {
+            color: $color1;
+        }
+        &:active .fa-list-ul {
+            color: $color1;
+        }  
+        &:active .fa-store {
+            color: $color1;
+        }
+    }
+    
     .nav_number {
         position:relative;
         top: 10px;
@@ -39,6 +52,7 @@
         margin: 0px;
         border-radius: 50px;
         text-indent: 1px;
+        z-index: 5;
     }
 
     .nav_text {
@@ -47,19 +61,6 @@
         top: -30px;
     }
 
-    .nav_fonctionnementLi:active{ 
-        background: #f2eafb ;
-        &:active .fa-mobile-alt {
-            color: $color1;
-        }
-        &:active .fa-list-ul {
-            color: $color1;
-        }  
-        &:active .fa-store {
-            color: $color1;
-        }
-    }
-    
     .restaurant_blockimg {
         height: 180px;
         width: 280px;

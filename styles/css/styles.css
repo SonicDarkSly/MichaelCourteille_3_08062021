@@ -447,6 +447,7 @@ body {
 }
 
 .link_fonctionnement {
+  background: #f2eafb;
   text-decoration: none;
   color: #000000;
 }
@@ -639,7 +640,7 @@ body {
     padding-left: 20px;
   }
 
-  #nav_fonctionnement li {
+  .nav_fonctionnementLi {
     height: 50px;
     list-style: none;
     text-align: left;
@@ -652,6 +653,19 @@ body {
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #d8d5d5;
+  }
+
+  .nav_fonctionnementLi:active {
+    background: #f2eafb;
+  }
+  .nav_fonctionnementLi:active:active .fa-mobile-alt {
+    color: #9356DC;
+  }
+  .nav_fonctionnementLi:active:active .fa-list-ul {
+    color: #9356DC;
+  }
+  .nav_fonctionnementLi:active:active .fa-store {
+    color: #9356DC;
   }
 
   .nav_number {
@@ -670,25 +684,13 @@ body {
     margin: 0px;
     border-radius: 50px;
     text-indent: 1px;
+    z-index: 5;
   }
 
   .nav_text {
     text-align: center;
     position: relative;
     top: -30px;
-  }
-
-  .nav_fonctionnementLi:active {
-    background: #f2eafb;
-  }
-  .nav_fonctionnementLi:active:active .fa-mobile-alt {
-    color: #9356DC;
-  }
-  .nav_fonctionnementLi:active:active .fa-list-ul {
-    color: #9356DC;
-  }
-  .nav_fonctionnementLi:active:active .fa-store {
-    color: #9356DC;
   }
 
   .restaurant_blockimg {
