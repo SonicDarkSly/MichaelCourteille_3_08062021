@@ -28,6 +28,10 @@ body {
 
 /* header */
 
+.hidden {
+    display: none;
+}
+
 .headerLogo_g {
     display: table-cell;
     vertical-align: middle;
@@ -106,7 +110,7 @@ body {
     text-decoration: none;
 }
 
-.btnLink:hover {
+.btnLink:active  {
     box-shadow: 0px 5px 10px #707070;
     background: linear-gradient(to top left, $color2, $color1);
     opacity:0.8;
@@ -152,15 +156,15 @@ body {
     box-shadow: 0px 5px 10px #d8d5d5;
 }
 
-.nav_fonctionnementLi:hover{ 
+.nav_fonctionnementLi:active{ 
     background: #f2eafb ;
-    &:hover .fa-mobile-alt {
+    &:active .fa-mobile-alt {
         color: $color1;
     }
-    &:hover .fa-list-ul {
+    &:active .fa-list-ul {
         color: $color1;
     }  
-    &:hover .fa-store {
+    &:active .fa-store {
         color: $color1;
     }
 }
@@ -251,6 +255,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     text-align: center;
+    margin-top: 40px;
 }
 
 .restaurant_blockimg {

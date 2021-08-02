@@ -47,6 +47,19 @@
         top: -30px;
     }
 
+    .nav_fonctionnementLi:active{ 
+        background: #f2eafb ;
+        &:active .fa-mobile-alt {
+            color: $color1;
+        }
+        &:active .fa-list-ul {
+            color: $color1;
+        }  
+        &:active .fa-store {
+            color: $color1;
+        }
+    }
+    
     .restaurant_blockimg {
         height: 180px;
         width: 280px;
